@@ -1,9 +1,6 @@
 package com.mlh.spraysample
 package basic
 
-import scala.concurrent.duration._
-
-import akka.util.Timeout
 import org.json4s._
 import spray.httpx.Json4sSupport
 import spray.routing._
@@ -20,10 +17,6 @@ case class Foo(bar: String)
  * Note you can mix-in dependencies should you so chose */
 trait SpraySampleService extends HttpService {
   import Json4sProtocol._
-
-  //These implicit values allow us to use futures
-  //in this trait.
-  implicit val timeout = Timeout(5 seconds)
 
   val spraysampleRoute = {
     path("entity") {

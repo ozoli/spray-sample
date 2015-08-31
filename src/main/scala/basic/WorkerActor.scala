@@ -1,11 +1,7 @@
 package com.mlh.spraysample
 package basic
 
-import akka.actor.{ Actor, ActorSystem, Props, ActorLogging }
-import akka.io.IO
-import akka.routing._
-import org.json4s._
-import org.json4s.native.JsonMethods._
+import akka.actor.{ Actor, ActorLogging }
 
 object WorkerActor {
   case class Ok(id: Int)
