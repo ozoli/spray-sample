@@ -61,6 +61,7 @@ libraryDependencies ++= Seq (
   ,"io.spray" %% "spray-routing" % sprayVersion
   ,"io.spray" %% "spray-can" % sprayVersion
   ,"io.spray" %% "spray-httpx" % sprayVersion
+  ,"io.spray" %% "spray-json" % sprayVersion
   ,"io.spray" %% "spray-testkit" % sprayVersion % "test"
   // -- Json --
   ,"org.json4s" %% "json4s-native" % "3.2.11"
